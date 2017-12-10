@@ -1,0 +1,61 @@
+def mainMenu(self, message):
+    keyboard = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    keyboard.row("Произошел страховой случай, что делать?")
+    keyboard.row("Главное меню \U0001F3E0")
+    self.bot.send_message(message.from_user.id, "", reply_markup=keyboard)
+
+def insurance_occurMenu(self, message):
+    keyboard = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    keyboard.row("Медицинские расходы")
+    keyboard.row("Несчастный случай")
+    keyboard.row("Пропажа багажа")
+    keyboard.row("Отмена поездки")
+    keyboard.row("Главное меню \U0001F3E0")
+    self.bot.send_message(message.from_user.id, "Выберите страховой случай", reply_markup=keyboard)
+
+def medical_refundMenu(self, message):
+    keyboard = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    keyboard.row("Вызов врача")
+    keyboard.row("Амбулаторное или стационарное лечение")
+    keyboard.row("Проведение операции")
+    keyboard.row("Стоматологические услуги")
+    keyboard.row("Врачебные услуги (перевязки)")
+    keyboard.row("Главное меню \U0001F3E0")
+    self.bot.send_message(message.from_user.id, "Выбор характера требуемой помощи", reply_markup=keyboard)
+
+def accidentMenu(self, message):
+    keyboard = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    keyboard.row("Ранение")
+    keyboard.row("Ушиб, вывих или растяжение")
+    keyboard.row("Ожог")
+    keyboard.row("Перелом")
+    keyboard.row("Главное меню \U0001F3E0")
+    self.bot.send_message(message.from_user.id, "Выбор характера требуемой помощи", reply_markup=keyboard)
+
+def luggage_dissapearanceMenu(self, message):
+    keyboard = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    keyboard.row("Заявление об утере багажа")
+    keyboard.row("Акт перевозчика")
+    keyboard.row("Бирки")
+    keyboard.row("Расходный кассовый ордер")
+    keyboard.row("Полис")
+    keyboard.row("Главное меню \U0001F3E0")
+    self.bot.send_message(message.from_user.id, "Необходимо сообщить о пропаже сотрудникам транспортной организации, получить документы пропажи багажа или письменный отказ", reply_markup=keyboard)
+
+def trip_canceledMenu(self, message):
+    keyboard = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    keyboard.row("Список необходимых документов")
+    keyboard.row("Главное меню \U0001F3E0")
+    self.bot.send_message(message.from_user.id, "Напишите заявление в страховую о наступлении страхового случая в течении 7 дней с момента наступления", reply_markup=keyboard)
+
+def open_doc_cancelMenu(self, message):
+    keyboard = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
+    keyboard.row("Заявление об отмене поездки")
+    keyboard.row("Полис")
+    keyboard.row("Загранпаспорт")
+    keyboard.row("Договор")
+    keyboard.row("Подтверждение расходов")
+    keyboard.row("Другие")
+    keyboard.row("Главное меню \U0001F3E0")
+    self.bot.send_message(message.from_user.id, "Ничего", reply_markup=keyboard)
+

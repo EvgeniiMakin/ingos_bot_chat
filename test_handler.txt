@@ -1,0 +1,208 @@
+@bot.message_handler(regexp="Произошел страховой случай, что делать?")
+def insurance_occur0Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.insurance_occurMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Медицинские расходы")
+def medical_refund00Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.medical_refundMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Несчастный случай")
+def accident01Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.accidentMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Пропажа багажа")
+def luggage_dissapearance02Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.luggage_dissapearanceMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Отмена поездки")
+def trip_canceled03Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.trip_canceledMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Вызов врача")
+def maps000Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Амбулаторное или стационарное лечение")
+def maps001Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Проведение операции")
+def maps002Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Стоматологические услуги")
+def maps003Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Врачебные услуги (перевязки)")
+def maps004Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Ранение")
+def maps010Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Ушиб, вывих или растяжение")
+def maps011Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Ожог")
+def maps012Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Перелом")
+def maps013Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.mapsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Заявление об утере багажа")
+def docs020Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Акт перевозчика")
+def docs021Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Бирки")
+def docs022Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Расходный кассовый ордер")
+def docs023Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Полис")
+def docs024Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Список необходимых документов")
+def open_doc_cancel030Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.open_doc_cancelMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Заявление об отмене поездки")
+def docs0300Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Полис")
+def docs0301Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Загранпаспорт")
+def docs0302Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Договор")
+def docs0303Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Подтверждение расходов")
+def docs0304Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
+@bot.message_handler(regexp="Другие")
+def docs0305Request(message):
+    if isUserInDB(message) and isUserLoggedIn(message):
+        basicMarkup.docsMenu(message)
+    else:
+        pass
+    log.logging(message)
+
